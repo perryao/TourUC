@@ -11,6 +11,7 @@
 #import "BuildingDetailService.h"
 #import "Building.h"
 #import <CoreLocation/CoreLocation.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface AppDelegate ()<CLLocationManagerDelegate>
 
@@ -114,6 +115,7 @@
         [[NSNotificationCenter defaultCenter]postNotificationName:@"BYBEACON" object:building];
         UILocalNotification *notification = [UILocalNotification new];
         notification.alertBody = [NSString stringWithFormat:@"Welcome to %@", building.name];
+        notification.alertAction = building.name;
         notification.soundName = @"Default";
         [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
 
@@ -143,6 +145,7 @@
 
 - (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
 {
+
     
 }
 

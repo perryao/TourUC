@@ -26,7 +26,7 @@
 		27A7700418F0C732006296EF /* BeaconMonitoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700318F0C732006296EF /* BeaconMonitoringService.m */; };
 		27A7700718F10AE3006296EF /* BuildingDetailService.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700618F10AE3006296EF /* BuildingDetailService.m */; };
 		27A7700A18F10B34006296EF /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700918F10B34006296EF /* Building.m */; };
-		27A7700C18F13DF2006296EF /* Baldwin Hall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */; };
+		27A7700C18F13DF2006296EF /* Baldwin Hall.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 27A7700B18F13DF2006296EF /* Baldwin Hall.m4v */; };
 		27A7700E18F13DF9006296EF /* UC Pavilion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */; };
 		27A7701018F13ECC006296EF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A7700F18F13ECC006296EF /* MediaPlayer.framework */; };
 		27A7701318F154D2006296EF /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7701218F154D2006296EF /* HudView.m */; };
@@ -73,15 +73,15 @@
 		27A7700618F10AE3006296EF /* BuildingDetailService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildingDetailService.m; path = Groceries/Model/BuildingDetailService.m; sourceTree = "<group>"; };
 		27A7700818F10B34006296EF /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = Groceries/Model/Building.h; sourceTree = "<group>"; };
 		27A7700918F10B34006296EF /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = Groceries/Model/Building.m; sourceTree = "<group>"; };
-		27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baldwin Hall.mp4"; sourceTree = "<group>"; };
+		27A7700B18F13DF2006296EF /* Baldwin Hall.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baldwin Hall.m4v"; sourceTree = "<group>"; };
 		27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UC Pavilion.mp4"; sourceTree = "<group>"; };
 		27A7700F18F13ECC006296EF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		27A7701118F154D2006296EF /* HudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudView.h; sourceTree = "<group>"; };
 		27A7701218F154D2006296EF /* HudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudView.m; sourceTree = "<group>"; };
-		27A7701818F15571006296EF /* BuildingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuildingCell.h; path = Groceries/View/BuildingCell.h; sourceTree = "<group>"; };
-		27A7701918F15571006296EF /* BuildingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildingCell.m; path = Groceries/View/BuildingCell.m; sourceTree = "<group>"; };
-		27A7701B18F15C7A006296EF /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
-		27A7701C18F15C7A006296EF /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		27A7701818F15571006296EF /* BuildingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuildingCell.h; path = View/BuildingCell.h; sourceTree = "<group>"; };
+		27A7701918F15571006296EF /* BuildingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildingCell.m; path = View/BuildingCell.m; sourceTree = "<group>"; };
+		27A7701B18F15C7A006296EF /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Resize.h"; path = "Groceries/UIImage+Resize.h"; sourceTree = "<group>"; };
+		27A7701C18F15C7A006296EF /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Resize.m"; path = "Groceries/UIImage+Resize.m"; sourceTree = "<group>"; };
 		27A7701E18F16465006296EF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Groceries/DetailViewController.h; sourceTree = "<group>"; };
 		27A7701F18F16465006296EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Groceries/DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,18 +116,8 @@
 		27A76FB618F0AA4E006296EF = {
 			isa = PBXGroup;
 			children = (
-				27A7701818F15571006296EF /* BuildingCell.h */,
-				27A7702118F165D4006296EF /* ViewController */,
-				27A7701918F15571006296EF /* BuildingCell.m */,
-				27A7700818F10B34006296EF /* Building.h */,
-				27A7700918F10B34006296EF /* Building.m */,
-				27A7700518F10AE3006296EF /* BuildingDetailService.h */,
-				27A7700618F10AE3006296EF /* BuildingDetailService.m */,
-				27A7700218F0C732006296EF /* BeaconMonitoringService.h */,
-				27A7700318F0C732006296EF /* BeaconMonitoringService.m */,
 				27A76FC818F0AA4E006296EF /* TourUC */,
-				27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */,
-				27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */,
+				27A7702318F17383006296EF /* Assets */,
 				27A76FE718F0AA4E006296EF /* GroceriesTests */,
 				27A76FC118F0AA4E006296EF /* Frameworks */,
 				27A76FC018F0AA4E006296EF /* Products */,
@@ -160,13 +150,12 @@
 		27A76FC818F0AA4E006296EF /* TourUC */ = {
 			isa = PBXGroup;
 			children = (
+				27A7702218F1733F006296EF /* Model */,
+				27A7701418F154EC006296EF /* View */,
+				27A7702118F165D4006296EF /* ViewController */,
 				27A76FD118F0AA4E006296EF /* AppDelegate.h */,
 				27A76FD218F0AA4E006296EF /* AppDelegate.m */,
-				27A76FD418F0AA4E006296EF /* Main.storyboard */,
-				27A7701B18F15C7A006296EF /* UIImage+Resize.h */,
-				27A7701C18F15C7A006296EF /* UIImage+Resize.m */,
 				27A76FDA18F0AA4E006296EF /* Images.xcassets */,
-				27A7701418F154EC006296EF /* View */,
 				27A76FC918F0AA4E006296EF /* Supporting Files */,
 			);
 			name = TourUC;
@@ -205,6 +194,9 @@
 		27A7701418F154EC006296EF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				27A76FD418F0AA4E006296EF /* Main.storyboard */,
+				27A7701818F15571006296EF /* BuildingCell.h */,
+				27A7701918F15571006296EF /* BuildingCell.m */,
 				27A7701118F154D2006296EF /* HudView.h */,
 				27A7701218F154D2006296EF /* HudView.m */,
 			);
@@ -220,6 +212,32 @@
 				27A76FD818F0AA4E006296EF /* ViewController.m */,
 			);
 			name = ViewController;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		27A7702218F1733F006296EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				27A7701B18F15C7A006296EF /* UIImage+Resize.h */,
+				27A7701C18F15C7A006296EF /* UIImage+Resize.m */,
+				27A7700818F10B34006296EF /* Building.h */,
+				27A7700918F10B34006296EF /* Building.m */,
+				27A7700518F10AE3006296EF /* BuildingDetailService.h */,
+				27A7700618F10AE3006296EF /* BuildingDetailService.m */,
+				27A7700218F0C732006296EF /* BeaconMonitoringService.h */,
+				27A7700318F0C732006296EF /* BeaconMonitoringService.m */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		27A7702318F17383006296EF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				27A7700B18F13DF2006296EF /* Baldwin Hall.m4v */,
+				27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,7 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A7700C18F13DF2006296EF /* Baldwin Hall.mp4 in Resources */,
+				27A7700C18F13DF2006296EF /* Baldwin Hall.m4v in Resources */,
 				27A76FDB18F0AA4E006296EF /* Images.xcassets in Resources */,
 				27A7700E18F13DF9006296EF /* UC Pavilion.mp4 in Resources */,
 				27A76FCD18F0AA4E006296EF /* InfoPlist.strings in Resources */,

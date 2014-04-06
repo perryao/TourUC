@@ -21,6 +21,7 @@
 @property(strong,nonatomic)CLLocationManager *locationManager;
 
 @property (strong,nonatomic)NSMutableArray *buildings;
+@property (strong,nonatomic)MPMoviePlayerViewController *moviePlayerController;
 
 
 @end
@@ -102,15 +103,23 @@
     Building *building = (Building *)notification.object;
 
 
-
     NSString *path =[[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%@", building.name] ofType:@"mp4"];
     NSURL *url = [NSURL fileURLWithPath:path];
 
+    self.moviePlayerController.moviePlayer.contentURL = url;
+    [self.moviePlayerController.moviePlayer prepareToPlay];
+    [self presentMoviePlayerViewControllerAnimated:self.moviePlayerController];
+    [self.moviePlayerController.moviePlayer play];
 
-    MPMoviePlayerViewController *controller = [[MPMoviePlayerViewController alloc] initWithContentURL:url];
-    [self presentMoviePlayerViewControllerAnimated:controller];
-    [controller.moviePlayer play];
 
+}
+
+- (MPMoviePlayerViewController *)moviePlayerController
+{
+    if (_moviePlayerController == nil) {
+        _moviePlayerController = [MPMoviePlayerViewController new];
+    }
+    return _moviePlayerController;
 }
 
 
@@ -125,6 +134,26 @@
 {
 
 
+}
+
+
+
+-(NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    if (orientation == UIInterfaceOrientationPortrait)
+        return YES;
+
+    return NO;
 }
 
 
