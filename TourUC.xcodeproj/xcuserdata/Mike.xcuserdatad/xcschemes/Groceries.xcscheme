@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
                BuildableName = "Groceries.app"
-               BlueprintName = "Groceries"
-               ReferencedContainer = "container:Groceries.xcodeproj">
+               BlueprintName = "TourUC"
+               ReferencedContainer = "container:TourUC.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27A76FDF18F0AA4E006296EF"
                BuildableName = "GroceriesTests.xctest"
-               BlueprintName = "GroceriesTests"
-               ReferencedContainer = "container:Groceries.xcodeproj">
+               BlueprintName = "TourUCTests"
+               ReferencedContainer = "container:TourUC.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -44,8 +44,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
             BuildableName = "Groceries.app"
-            BlueprintName = "Groceries"
-            ReferencedContainer = "container:Groceries.xcodeproj">
+            BlueprintName = "TourUC"
+            ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -63,8 +63,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
             BuildableName = "Groceries.app"
-            BlueprintName = "Groceries"
-            ReferencedContainer = "container:Groceries.xcodeproj">
+            BlueprintName = "TourUC"
+            ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -81,8 +81,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
             BuildableName = "Groceries.app"
-            BlueprintName = "Groceries"
-            ReferencedContainer = "container:Groceries.xcodeproj">
+            BlueprintName = "TourUC"
+            ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

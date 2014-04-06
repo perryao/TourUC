@@ -29,6 +29,10 @@
 		27A7700C18F13DF2006296EF /* Baldwin Hall.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */; };
 		27A7700E18F13DF9006296EF /* UC Pavilion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */; };
 		27A7701018F13ECC006296EF /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A7700F18F13ECC006296EF /* MediaPlayer.framework */; };
+		27A7701318F154D2006296EF /* HudView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7701218F154D2006296EF /* HudView.m */; };
+		27A7701A18F15571006296EF /* BuildingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7701918F15571006296EF /* BuildingCell.m */; };
+		27A7701D18F15C7A006296EF /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7701C18F15C7A006296EF /* UIImage+Resize.m */; };
+		27A7702018F16465006296EF /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7701F18F16465006296EF /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,23 +46,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		27A76FBF18F0AA4E006296EF /* Groceries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groceries.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A76FBF18F0AA4E006296EF /* TourUC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourUC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A76FC218F0AA4E006296EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27A76FC418F0AA4E006296EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		27A76FC618F0AA4E006296EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		27A76FCA18F0AA4E006296EF /* Groceries-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Groceries-Info.plist"; sourceTree = "<group>"; };
+		27A76FCA18F0AA4E006296EF /* TourUC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TourUC-Info.plist"; sourceTree = "<group>"; };
 		27A76FCC18F0AA4E006296EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27A76FCE18F0AA4E006296EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27A76FD018F0AA4E006296EF /* Groceries-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Groceries-Prefix.pch"; sourceTree = "<group>"; };
+		27A76FD018F0AA4E006296EF /* TourUC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TourUC-Prefix.pch"; sourceTree = "<group>"; };
 		27A76FD118F0AA4E006296EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27A76FD218F0AA4E006296EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27A76FD518F0AA4E006296EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27A76FD718F0AA4E006296EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27A76FD818F0AA4E006296EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27A76FD718F0AA4E006296EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = Groceries/ViewController.h; sourceTree = "<group>"; };
+		27A76FD818F0AA4E006296EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = Groceries/ViewController.m; sourceTree = "<group>"; };
 		27A76FDA18F0AA4E006296EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		27A76FE018F0AA4E006296EF /* GroceriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GroceriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27A76FE018F0AA4E006296EF /* TourUCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TourUCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27A76FE118F0AA4E006296EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		27A76FE918F0AA4E006296EF /* GroceriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroceriesTests-Info.plist"; sourceTree = "<group>"; };
+		27A76FE918F0AA4E006296EF /* TourUCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TourUCTests-Info.plist"; sourceTree = "<group>"; };
 		27A76FEB18F0AA4E006296EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27A76FED18F0AA4E006296EF /* GroceriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceriesTests.m; sourceTree = "<group>"; };
 		27A76FFB18F0B9AE006296EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -72,6 +76,14 @@
 		27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baldwin Hall.mp4"; sourceTree = "<group>"; };
 		27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UC Pavilion.mp4"; sourceTree = "<group>"; };
 		27A7700F18F13ECC006296EF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		27A7701118F154D2006296EF /* HudView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HudView.h; sourceTree = "<group>"; };
+		27A7701218F154D2006296EF /* HudView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HudView.m; sourceTree = "<group>"; };
+		27A7701818F15571006296EF /* BuildingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuildingCell.h; path = Groceries/View/BuildingCell.h; sourceTree = "<group>"; };
+		27A7701918F15571006296EF /* BuildingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildingCell.m; path = Groceries/View/BuildingCell.m; sourceTree = "<group>"; };
+		27A7701B18F15C7A006296EF /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		27A7701C18F15C7A006296EF /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		27A7701E18F16465006296EF /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = Groceries/DetailViewController.h; sourceTree = "<group>"; };
+		27A7701F18F16465006296EF /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = Groceries/DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +116,16 @@
 		27A76FB618F0AA4E006296EF = {
 			isa = PBXGroup;
 			children = (
+				27A7701818F15571006296EF /* BuildingCell.h */,
+				27A7702118F165D4006296EF /* ViewController */,
+				27A7701918F15571006296EF /* BuildingCell.m */,
 				27A7700818F10B34006296EF /* Building.h */,
 				27A7700918F10B34006296EF /* Building.m */,
 				27A7700518F10AE3006296EF /* BuildingDetailService.h */,
 				27A7700618F10AE3006296EF /* BuildingDetailService.m */,
 				27A7700218F0C732006296EF /* BeaconMonitoringService.h */,
 				27A7700318F0C732006296EF /* BeaconMonitoringService.m */,
-				27A76FC818F0AA4E006296EF /* Groceries */,
+				27A76FC818F0AA4E006296EF /* TourUC */,
 				27A7700B18F13DF2006296EF /* Baldwin Hall.mp4 */,
 				27A7700D18F13DF9006296EF /* UC Pavilion.mp4 */,
 				27A76FE718F0AA4E006296EF /* GroceriesTests */,
@@ -122,8 +137,8 @@
 		27A76FC018F0AA4E006296EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27A76FBF18F0AA4E006296EF /* Groceries.app */,
-				27A76FE018F0AA4E006296EF /* GroceriesTests.xctest */,
+				27A76FBF18F0AA4E006296EF /* TourUC.app */,
+				27A76FE018F0AA4E006296EF /* TourUCTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,27 +157,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		27A76FC818F0AA4E006296EF /* Groceries */ = {
+		27A76FC818F0AA4E006296EF /* TourUC */ = {
 			isa = PBXGroup;
 			children = (
 				27A76FD118F0AA4E006296EF /* AppDelegate.h */,
 				27A76FD218F0AA4E006296EF /* AppDelegate.m */,
 				27A76FD418F0AA4E006296EF /* Main.storyboard */,
-				27A76FD718F0AA4E006296EF /* ViewController.h */,
-				27A76FD818F0AA4E006296EF /* ViewController.m */,
+				27A7701B18F15C7A006296EF /* UIImage+Resize.h */,
+				27A7701C18F15C7A006296EF /* UIImage+Resize.m */,
 				27A76FDA18F0AA4E006296EF /* Images.xcassets */,
+				27A7701418F154EC006296EF /* View */,
 				27A76FC918F0AA4E006296EF /* Supporting Files */,
 			);
+			name = TourUC;
 			path = Groceries;
 			sourceTree = "<group>";
 		};
 		27A76FC918F0AA4E006296EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27A76FCA18F0AA4E006296EF /* Groceries-Info.plist */,
+				27A76FCA18F0AA4E006296EF /* TourUC-Info.plist */,
 				27A76FCB18F0AA4E006296EF /* InfoPlist.strings */,
 				27A76FCE18F0AA4E006296EF /* main.m */,
-				27A76FD018F0AA4E006296EF /* Groceries-Prefix.pch */,
+				27A76FD018F0AA4E006296EF /* TourUC-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -179,18 +196,38 @@
 		27A76FE818F0AA4E006296EF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27A76FE918F0AA4E006296EF /* GroceriesTests-Info.plist */,
+				27A76FE918F0AA4E006296EF /* TourUCTests-Info.plist */,
 				27A76FEA18F0AA4E006296EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27A7701418F154EC006296EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27A7701118F154D2006296EF /* HudView.h */,
+				27A7701218F154D2006296EF /* HudView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		27A7702118F165D4006296EF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27A7701E18F16465006296EF /* DetailViewController.h */,
+				27A7701F18F16465006296EF /* DetailViewController.m */,
+				27A76FD718F0AA4E006296EF /* ViewController.h */,
+				27A76FD818F0AA4E006296EF /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27A76FBE18F0AA4E006296EF /* Groceries */ = {
+		27A76FBE18F0AA4E006296EF /* TourUC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27A76FF118F0AA4E006296EF /* Build configuration list for PBXNativeTarget "Groceries" */;
+			buildConfigurationList = 27A76FF118F0AA4E006296EF /* Build configuration list for PBXNativeTarget "TourUC" */;
 			buildPhases = (
 				27A76FBB18F0AA4E006296EF /* Sources */,
 				27A76FBC18F0AA4E006296EF /* Frameworks */,
@@ -200,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = Groceries;
+			name = TourUC;
 			productName = Groceries;
-			productReference = 27A76FBF18F0AA4E006296EF /* Groceries.app */;
+			productReference = 27A76FBF18F0AA4E006296EF /* TourUC.app */;
 			productType = "com.apple.product-type.application";
 		};
-		27A76FDF18F0AA4E006296EF /* GroceriesTests */ = {
+		27A76FDF18F0AA4E006296EF /* TourUCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27A76FF418F0AA4E006296EF /* Build configuration list for PBXNativeTarget "GroceriesTests" */;
+			buildConfigurationList = 27A76FF418F0AA4E006296EF /* Build configuration list for PBXNativeTarget "TourUCTests" */;
 			buildPhases = (
 				27A76FDC18F0AA4E006296EF /* Sources */,
 				27A76FDD18F0AA4E006296EF /* Frameworks */,
@@ -218,9 +255,9 @@
 			dependencies = (
 				27A76FE618F0AA4E006296EF /* PBXTargetDependency */,
 			);
-			name = GroceriesTests;
+			name = TourUCTests;
 			productName = GroceriesTests;
-			productReference = 27A76FE018F0AA4E006296EF /* GroceriesTests.xctest */;
+			productReference = 27A76FE018F0AA4E006296EF /* TourUCTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -237,7 +274,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 27A76FBA18F0AA4E006296EF /* Build configuration list for PBXProject "Groceries" */;
+			buildConfigurationList = 27A76FBA18F0AA4E006296EF /* Build configuration list for PBXProject "TourUC" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -250,8 +287,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27A76FBE18F0AA4E006296EF /* Groceries */,
-				27A76FDF18F0AA4E006296EF /* GroceriesTests */,
+				27A76FBE18F0AA4E006296EF /* TourUC */,
+				27A76FDF18F0AA4E006296EF /* TourUCTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,8 +325,12 @@
 				27A76FD318F0AA4E006296EF /* AppDelegate.m in Sources */,
 				27A76FCF18F0AA4E006296EF /* main.m in Sources */,
 				27A7700718F10AE3006296EF /* BuildingDetailService.m in Sources */,
+				27A7701318F154D2006296EF /* HudView.m in Sources */,
+				27A7702018F16465006296EF /* DetailViewController.m in Sources */,
+				27A7701D18F15C7A006296EF /* UIImage+Resize.m in Sources */,
 				27A7700418F0C732006296EF /* BeaconMonitoringService.m in Sources */,
 				27A7700A18F10B34006296EF /* Building.m in Sources */,
+				27A7701A18F15571006296EF /* BuildingCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +347,7 @@
 /* Begin PBXTargetDependency section */
 		27A76FE618F0AA4E006296EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 27A76FBE18F0AA4E006296EF /* Groceries */;
+			target = 27A76FBE18F0AA4E006296EF /* TourUC */;
 			targetProxy = 27A76FE518F0AA4E006296EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -415,10 +456,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Groceries/Groceries-Prefix.pch";
-				INFOPLIST_FILE = "Groceries/Groceries-Info.plist";
+				GCC_PREFIX_HEADER = "Groceries/TourUC-Prefix.pch";
+				INFOPLIST_FILE = "Groceries/TourUC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TourUC;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -429,10 +470,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Groceries/Groceries-Prefix.pch";
-				INFOPLIST_FILE = "Groceries/Groceries-Info.plist";
+				GCC_PREFIX_HEADER = "Groceries/TourUC-Prefix.pch";
+				INFOPLIST_FILE = "Groceries/TourUC-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TourUC;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -452,8 +493,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GroceriesTests/GroceriesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GroceriesTests/TourUCTests-Info.plist";
+				PRODUCT_NAME = TourUCTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -470,8 +511,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Groceries/Groceries-Prefix.pch";
-				INFOPLIST_FILE = "GroceriesTests/GroceriesTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "GroceriesTests/TourUCTests-Info.plist";
+				PRODUCT_NAME = TourUCTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -480,7 +521,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27A76FBA18F0AA4E006296EF /* Build configuration list for PBXProject "Groceries" */ = {
+		27A76FBA18F0AA4E006296EF /* Build configuration list for PBXProject "TourUC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A76FEF18F0AA4E006296EF /* Debug */,
@@ -489,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27A76FF118F0AA4E006296EF /* Build configuration list for PBXNativeTarget "Groceries" */ = {
+		27A76FF118F0AA4E006296EF /* Build configuration list for PBXNativeTarget "TourUC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A76FF218F0AA4E006296EF /* Debug */,
@@ -497,7 +538,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		27A76FF418F0AA4E006296EF /* Build configuration list for PBXNativeTarget "GroceriesTests" */ = {
+		27A76FF418F0AA4E006296EF /* Build configuration list for PBXNativeTarget "TourUCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27A76FF518F0AA4E006296EF /* Debug */,

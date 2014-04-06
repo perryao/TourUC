@@ -136,23 +136,15 @@
     }
 
 
-//    if (beacon.proximity == CLProximityImmediate) {
-//        UILocalNotification *notification = [UILocalNotification new];
-//        notification.alertBody = @"You are very close to the iBeacon";
-//        notification.soundName = @"Default";
-//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
-//    }else if (beacon.proximity == CLProximityNear){
-//        UILocalNotification *notification = [UILocalNotification new];
-//        notification.alertBody = @"You're near to the iBeacon but can get closer";
-//        notification.soundName = @"Default";
-//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
-//    }else if (beacon.proximity == CLProximityFar){
-//        UILocalNotification *notification = [UILocalNotification new];
-//        notification.alertBody = @"You are far from the iBeacon";
-//        notification.soundName = @"Default";
-//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
-//    }
+
 
 }
+
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    
+}
+
 
 @end
