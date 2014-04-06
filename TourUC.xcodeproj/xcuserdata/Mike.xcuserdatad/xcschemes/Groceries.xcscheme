@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
-               BuildableName = "Groceries.app"
+               BuildableName = "TourUC.app"
                BlueprintName = "TourUC"
                ReferencedContainer = "container:TourUC.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27A76FDF18F0AA4E006296EF"
-               BuildableName = "GroceriesTests.xctest"
+               BuildableName = "TourUCTests.xctest"
                BlueprintName = "TourUCTests"
                ReferencedContainer = "container:TourUC.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
-            BuildableName = "Groceries.app"
+            BuildableName = "TourUC.app"
             BlueprintName = "TourUC"
             ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
-            BuildableName = "Groceries.app"
+            BuildableName = "TourUC.app"
             BlueprintName = "TourUC"
             ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27A76FBE18F0AA4E006296EF"
-            BuildableName = "Groceries.app"
+            BuildableName = "TourUC.app"
             BlueprintName = "TourUC"
             ReferencedContainer = "container:TourUC.xcodeproj">
          </BuildableReference>
