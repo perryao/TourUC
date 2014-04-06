@@ -7,9 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Building;
 @interface BuildingDetailService : NSObject
 
 +(BuildingDetailService *)sharedInstance;
+
+- (Building *)buildingWithUUID:(NSUUID *)uuid;
+
+
 
 @end
