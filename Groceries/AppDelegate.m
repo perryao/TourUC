@@ -7,40 +7,105 @@
 //
 
 #import "AppDelegate.h"
+#import "BeaconMonitoringService.h"
+#import <CoreLocation/CoreLocation.h>
+
+@interface AppDelegate ()<CLLocationManagerDelegate>
+
+@property (strong,nonatomic)CLLocationManager *locationManager;
+
+@end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    _locationManager = [CLLocationManager new];
+    _locationManager.delegate = self;
+    [[BeaconMonitoringService sharedInstance]stopMonitoringAllRegions];
+    NSUUID *uuid = [[NSUUID alloc]initWithUUIDString:@"C3CACDAD-5501-4DA6-B240-5F588C2AF0B2"];
+    [[BeaconMonitoringService sharedInstance]startMonitoringBeaconWithUUID:uuid major:0 minor:0 identifier:@"com.anthonymichaelperry.groceriesList" onEntry:YES onExit:YES];
+
+
+
     return YES;
 }
-							
-- (void)applicationWillResignActive:(UIApplication *)application
+
+
+#pragma mark - CLLocationManagerDelegate
+- (void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region
 {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    if ([region isKindOfClass:[CLBeaconRegion class]]) {
+        //CLBeaconRegion *beaconRegion = (CLBeaconRegion *)region;
+    }
+
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    if ([region isKindOfClass:[CLBeaconRegion class]]) {
+        CLBeaconRegion *beaconRegion = (CLBeaconRegion *)region;
+        UILocalNotification *notification = [UILocalNotification new];
+        notification.alertBody = [NSString stringWithFormat:@"You're near the iBeacon"];
+        notification.soundName = @"Default";
+        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+        [self.locationManager startRangingBeaconsInRegion:beaconRegion];
+
+    }
+
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region
 {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    if ([region isKindOfClass:[CLBeaconRegion class]]) {
+        UILocalNotification *notification = [UILocalNotification new];
+        notification.alertBody = @"You just left the range of the iBeacon";
+        notification.soundName = @"Default";
+        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+    }
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+- (void)locationManager:(CLLocationManager *)manager didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
+    CLBeacon *beacon;
+    for (CLBeacon *arrayBeacon in beacons) {
+        NSUUID *uuid = [[NSUUID alloc]initWithUUIDString:@"C3CACDAD-5501-4DA6-B240-5F588C2AF0B2"];
+        if ([arrayBeacon.proximityUUID isEqual:uuid]) {
+            beacon = arrayBeacon;
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        }
+
+
+    }
+
+
+    if (beacon.rssi >= -40 && beacon.rssi <=-30) {
+        UILocalNotification *notification = [UILocalNotification new];
+        notification.alertBody = [NSString stringWithFormat:@"Welcome to aisle 1. Measured RSSI of %ld", (long)beacon.rssi];
+        notification.soundName = @"Default";
+        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+
+    }
+
+
+//    if (beacon.proximity == CLProximityImmediate) {
+//        UILocalNotification *notification = [UILocalNotification new];
+//        notification.alertBody = @"You are very close to the iBeacon";
+//        notification.soundName = @"Default";
+//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+//    }else if (beacon.proximity == CLProximityNear){
+//        UILocalNotification *notification = [UILocalNotification new];
+//        notification.alertBody = @"You're near to the iBeacon but can get closer";
+//        notification.soundName = @"Default";
+//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+//    }else if (beacon.proximity == CLProximityFar){
+//        UILocalNotification *notification = [UILocalNotification new];
+//        notification.alertBody = @"You are far from the iBeacon";
+//        notification.soundName = @"Default";
+//        [[UIApplication sharedApplication]presentLocalNotificationNow:notification];
+//    }
+
 }
 
 @end

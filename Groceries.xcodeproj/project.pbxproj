@@ -21,6 +21,11 @@
 		27A76FE418F0AA4E006296EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A76FC618F0AA4E006296EF /* UIKit.framework */; };
 		27A76FEC18F0AA4E006296EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27A76FEA18F0AA4E006296EF /* InfoPlist.strings */; };
 		27A76FEE18F0AA4E006296EF /* GroceriesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A76FED18F0AA4E006296EF /* GroceriesTests.m */; };
+		27A76FFC18F0B9AE006296EF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A76FFB18F0B9AE006296EF /* CoreLocation.framework */; };
+		27A76FFE18F0B9B3006296EF /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A76FFD18F0B9B3006296EF /* CoreBluetooth.framework */; };
+		27A7700418F0C732006296EF /* BeaconMonitoringService.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700318F0C732006296EF /* BeaconMonitoringService.m */; };
+		27A7700718F10AE3006296EF /* BuildingDetailService.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700618F10AE3006296EF /* BuildingDetailService.m */; };
+		27A7700A18F10B34006296EF /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A7700918F10B34006296EF /* Building.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,14 @@
 		27A76FE918F0AA4E006296EF /* GroceriesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GroceriesTests-Info.plist"; sourceTree = "<group>"; };
 		27A76FEB18F0AA4E006296EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27A76FED18F0AA4E006296EF /* GroceriesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroceriesTests.m; sourceTree = "<group>"; };
+		27A76FFB18F0B9AE006296EF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		27A76FFD18F0B9B3006296EF /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		27A7700218F0C732006296EF /* BeaconMonitoringService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BeaconMonitoringService.h; path = Groceries/Model/BeaconMonitoringService.h; sourceTree = "<group>"; };
+		27A7700318F0C732006296EF /* BeaconMonitoringService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeaconMonitoringService.m; path = Groceries/Model/BeaconMonitoringService.m; sourceTree = "<group>"; };
+		27A7700518F10AE3006296EF /* BuildingDetailService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuildingDetailService.h; path = Groceries/Model/BuildingDetailService.h; sourceTree = "<group>"; };
+		27A7700618F10AE3006296EF /* BuildingDetailService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuildingDetailService.m; path = Groceries/Model/BuildingDetailService.m; sourceTree = "<group>"; };
+		27A7700818F10B34006296EF /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Building.h; path = Groceries/Model/Building.h; sourceTree = "<group>"; };
+		27A7700918F10B34006296EF /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Building.m; path = Groceries/Model/Building.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27A76FFE18F0B9B3006296EF /* CoreBluetooth.framework in Frameworks */,
+				27A76FFC18F0B9AE006296EF /* CoreLocation.framework in Frameworks */,
 				27A76FC518F0AA4E006296EF /* CoreGraphics.framework in Frameworks */,
 				27A76FC718F0AA4E006296EF /* UIKit.framework in Frameworks */,
 				27A76FC318F0AA4E006296EF /* Foundation.framework in Frameworks */,
@@ -82,6 +97,12 @@
 		27A76FB618F0AA4E006296EF = {
 			isa = PBXGroup;
 			children = (
+				27A7700818F10B34006296EF /* Building.h */,
+				27A7700918F10B34006296EF /* Building.m */,
+				27A7700518F10AE3006296EF /* BuildingDetailService.h */,
+				27A7700618F10AE3006296EF /* BuildingDetailService.m */,
+				27A7700218F0C732006296EF /* BeaconMonitoringService.h */,
+				27A7700318F0C732006296EF /* BeaconMonitoringService.m */,
 				27A76FC818F0AA4E006296EF /* Groceries */,
 				27A76FE718F0AA4E006296EF /* GroceriesTests */,
 				27A76FC118F0AA4E006296EF /* Frameworks */,
@@ -101,6 +122,8 @@
 		27A76FC118F0AA4E006296EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27A76FFD18F0B9B3006296EF /* CoreBluetooth.framework */,
+				27A76FFB18F0B9AE006296EF /* CoreLocation.framework */,
 				27A76FC218F0AA4E006296EF /* Foundation.framework */,
 				27A76FC418F0AA4E006296EF /* CoreGraphics.framework */,
 				27A76FC618F0AA4E006296EF /* UIKit.framework */,
@@ -252,6 +275,9 @@
 				27A76FD918F0AA4E006296EF /* ViewController.m in Sources */,
 				27A76FD318F0AA4E006296EF /* AppDelegate.m in Sources */,
 				27A76FCF18F0AA4E006296EF /* main.m in Sources */,
+				27A7700718F10AE3006296EF /* BuildingDetailService.m in Sources */,
+				27A7700418F0C732006296EF /* BeaconMonitoringService.m in Sources */,
+				27A7700A18F10B34006296EF /* Building.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Groceries/Groceries-Prefix.pch";
 				INFOPLIST_FILE = "Groceries/Groceries-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Groceries/Groceries-Prefix.pch";
 				INFOPLIST_FILE = "Groceries/Groceries-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
